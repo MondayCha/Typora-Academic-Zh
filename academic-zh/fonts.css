@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'STIX2Text';
+    font-style: normal;
+    font-weight: normal;
+    src: local('STIX2Text Regular'),
+        url('./STIX2Text-Regular.woff') format('woff'),
+        url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'STIX2Text';
+    font-style: italic;
+    font-weight: normal;
+    src: local('STIX2Text Italic'),
+        url('./STIX2Text-Italic.woff') format('woff'),
+        url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'STIX2Text';
+    font-style: normal;
+    font-weight: bold;
+    src: local('STIX2Text Bold'),
+        url('./STIX2Text-Bold.woff') format('woff'),
+        url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'STIX2Text';
+    font-style: italic;
+    font-weight: bold;
+    src: local('STIX2Text Bold Italic'),
+    url('./STIX2Text-BoldItalic.woff') format('woff'),
+    url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-BoldItalic.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'STIX2Math';
+    font-style: italic;
+    font-weight: bold;
+    src: local('STIX2Math'),url('./academic/STIX2Math.woff') format('woff')
+}
+
+@font-face {
+    font-family: '华文中宋';
+    src: url('./STZHONGS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: '华文中宋';
+    src: url('./STZHONGS_Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "CamingoCodeRegular";
+    src: url('./CamingoCode-Regular-1.woff') format('woff');
+}
