@@ -308,3 +308,9 @@ img {
     font-size: inherit !important;
 }
 
+@media print {
+    @page{ 
+        size: auto;
+        margin: 20mm 10mm 20mm 10mm; /* 页边距 */
+    }
+}
