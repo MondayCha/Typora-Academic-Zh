@@ -1,0 +1,337 @@
+@import './academic-zh/fonts.css';
+
+:root {
+    --side-bar-bg-color: #272b33;
+    --control-text-color: #a9aaab;
+    --select-text-bg-color: hsl(153, 47%, 40%);
+    --active-file-bg-color:  hsl(153, 47%, 40%);
+    --select-text-font-color: #aaaaaa;
+    --active-file-text-color: #eeeeee;
+    --bg-color: #0a0c10;
+    --active-file-bg-color: #0a0c10;
+    --text-color: #f0f3f6;
+    --window-border: none;
+    --search-select-bg-color: #575c61;
+    --active-file-bg-color: #0a0c10;
+    --item-hover-bg-color: #272b33;
+    --item-hover-text-color: #aaaaaa;
+    --control-text-color: #aaaaaa;
+    --active-toggle-btn-color: #192133;
+    --blur-text-color: rgba(200, 200, 200, 0.33);
+    --rawblock-edit-panel-bd: #272b33 !important;
+    --select-text-bg-color: rgba(53, 82, 116, 0.97) !important;
+    --select-text-font-color: #fff !important;
+    --color-border-secondary: #7a828e !important;
+}
+
+html {
+    font-size: 12pt;
+}
+
+/* Frame */
+body {
+    -webkit-font-smoothing: antialiased;
+    background: #0a0c10;
+    line-height: 1.8rem;
+    letter-spacing: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#write {
+    font-family: "STIX2Text", "Times New Roman", "华文中宋", "serif";
+    line-height: 1.5em;
+    padding: 10%;
+    padding-top: 5%;
+}
+
+.file-list-item-summary {
+    height: 36px;
+}
+
+.file-list-item {
+    padding-top: 18px !important;
+    padding-bottom: 18px;
+}
+
+#sidebar-loading-template.file-list-item {
+    padding-top: 0 !important;
+}
+
+a, a:visited {
+    color: #a9aaab;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+h1  {
+    font-size: 2.4em;
+}
+
+#write h1  {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5  {
+    font-size: 1em;
+}
+
+h6 {
+    font-size: 1em;
+	color: #777;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+pre, code {
+    font-family: "CamingoCodeRegular", "Times New Roman", "华文中宋", "serif", monospace !important;
+}
+
+.cm-s-inner .CodeMirror-cursor {
+    border-left: solid rgba(128, 128, 255, 0.8) !important;
+}
+
+/* 代码框 */
+
+#write .md-fences {
+    border: 1px solid #7a7a7a;
+    -webkit-font-smoothing: initial;
+    margin: 1rem 0 !important;
+    padding: 3px 3px;
+    line-height: 1.55rem;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    word-wrap: normal;
+}
+
+#write [mdtype="math_block"] {
+    font-size: 1.2rem;
+}
+
+#write .CodeMirror-wrap .CodeMirror-code pre {
+    padding-left: 12px;
+    line-height: 1.55rem;
+}
+
+.cm-s-inner .CodeMirror-linenumber {
+    width: 2ch !important;
+    color: rgba(128, 128, 255, 0.8);
+}
+
+#write .CodeMirror-cursors .CodeMirror-cursor {
+    border-left: 2px solid var(--main-4);
+}
+
+#write code,
+tt {
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-size: 0.92rem;
+    color: #6b6b6b;
+    /* color: #c7254e;
+    background-color: #f9f2f4;  */
+}
+
+tt {
+    margin: 0 2px;
+}
+
+#write .md-footnote {
+    background-color: #ffffff;
+    color: #a9aaab !important;
+}
+
+
+.footnotes {
+    display: list-item;
+    margin-left: 1em;
+}
+
+.md-fences {
+    border: 1px solid;
+}
+
+.md-fences.md-fences-with-lineno {
+    border: none;
+}
+
+.CodeMirror-linenumber {
+    color: #333;
+}
+
+*.in-text-selection,
+::selection,
+.CodeMirror-selected {
+    background: var(--search-select-bg-color);
+    color: var(--search-select-text-color) !important;
+    text-shadow: none;
+}
+
+a.md-toc-inner {
+    color: var(--text-color);
+}
+
+.cm-s-typora-default .cm-link {
+    color: #a9aaab;
+    text-decoration: underline;
+}
+
+.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property {
+    color: black;
+}
+
+#typora-source .CodeMirror-lines {
+    -webkit-font-smoothing: auto;
+    max-width: 1000px;
+}
+
+.md-def-name:before,
+.md-def-name:after {
+    color: #2d2d2d;
+}
+
+sup.md-footnote {
+    background-color: initial;
+    color: inherit;
+}
+
+mark {
+    background: #fff387;
+}
+
+td, th {
+    border: 1px solid;
+    padding-left: 1ch;
+    padding-right: 1ch;
+}
+
+/*table tr[cid]:first-child > td {
+    border-top: 3px double;
+}*/
+
+th {
+    border-bottom: 0;
+    padding-top: 2px;
+    background: #575c61;
+    border-color: #333;
+    color: #f3f3f3;
+}
+
+pre.md-meta-block {
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    padding: 5px;
+    margin-bottom: 1em;
+}
+
+.task-list-item input:before {
+    content: '\221A';
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.6rem;
+    vertical-align: middle;
+    text-align: center;
+    color: #bbb;
+    background-color: inherit;
+}
+
+.task-list-item input:checked:before,
+.task-list-item input[checked]:before{
+    color: inherit;
+}
+
+.md-task-list-item > input {
+    top: auto;
+    margin-left: -1.1em;
+    font-size: 1.3em;
+    margin-top: 0px;
+    -webkit-appearance: none;
+}
+
+.md-task-list-item input:before {
+    content: '\2610';
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.6rem;
+    vertical-align: middle;
+    text-align: center;
+    color: #bbb;
+    background-color: inherit;
+}
+
+.md-task-list-item input:checked:before,
+.md-task-list-item input[checked]:before{
+    color: inherit;
+    content: '\2611';
+}
+
+.task-list-item {
+    padding-left: 1.5em;
+}
+
+blockquote {
+    font-style: italic;
+    padding: 0.25em 24px;
+    position: relative;
+    color: inherit;
+    border-left: 2px solid;
+}
+
+blockquote,
+blockquote p {
+    line-height: 1.6;
+    color: #8b949e;
+}
+
+
+#write > blockquote {
+    padding: 0.25em 30px;
+    margin-left: -32px;
+    width: calc(100% + 32px);
+}
+
+#write >  .md-fences-with-lineno {
+    margin-left: -33px;
+    color: black;
+}
+
+/*
+img {
+	max-height: 20em;
+}*/
+
+.CodeMirror-linenumber {
+    min-width: 25px;
+}
+
+.md-header {
+    font-size: inherit !important;
+}
+
+@media print {
+    @page{ 
+        size: auto;
+        margin: 20mm 10mm 20mm 10mm; /* 页边距 */
+    }
+}
