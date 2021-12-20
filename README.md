@@ -2,7 +2,7 @@
 
 ## 关于主题
 
-基于 Typora 官方的 Academic 以及 [zh-academic](https://github.com/ZJUGuoShuai/zh-academic) 主题，正文字体采用华文中宋，等宽字体采用 CamingoCode，支持深色模式。
+基于 Typora 官方的 Academic 以及 [zh-academic](https://github.com/ZJUGuoShuai/zh-academic) 主题，正文字体采用华文中宋，等宽字体采用 CamingoCode，支持深色模式（开发中）。
 
 ## 安装方式
 
